@@ -1,0 +1,7 @@
+HTML 4
+HTML stands for HyperText Markup Language.
+
+- It is used to build static and dynamic web pages or structured of a page / skeleton.
+- w3 - world wide web - standards on which the web is based.
+- Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN.
+- HTML is the most used markup language in the world.

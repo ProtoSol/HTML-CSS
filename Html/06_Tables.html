@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Example</title>
+</head>
+<body>
+    <h1>HTML Tables</h1>
+    <p>Tables are used to represent data in a tabular format, using rows and columns. Below are examples of different types of tables:</p>
+    
+    <h2>Basic Table</h2>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+    </table>
+
+    <h2>Table with Caption</h2>
+    <table border="1">
+        <caption>Monthly Sales Data</caption>
+        <tr>
+            <th>Month</th>
+            <th>Sales</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$1500</td>
+        </tr>
+    </table>
+
+    <h2>Table with Colspan and Rowspan</h2>
+    <table border="1">
+        <tr>
+            <th colspan="2">Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+        </tr>
+    </table>
+
+    <h2>About Thead, Tbody, and Tfoot</h2>
+
+    <p>The <code>&lt;th&gt;</code> tag is used to define the headers of a table. It can be used with the <code>colspan</code> and <code>rowspan</code> attributes to define the size of the header.</p>
+    <p>The <code>&lt;tbody&gt;</code> tag is used to group the body content of a table. It is used with the <code>&lt;thead&gt;</code> and <code>&lt;tfoot&gt;</code> tags to divide the table into three parts: the table head, the table body, and the table foot.</p>
+    <p>The <code>&lt;tfoot&gt;</code> tag is used to define the footer of a table. It is used with the <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> tags to divide the table into three parts: the table head, the table body, and the table foot.</p>
+    <h2>Table with Thead, Tbody, and Tfoot</h2>
+    <table border="1">
+        <caption>Monthly Sales Data</caption>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$1500</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>$2000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>$4500</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Attributes of the Table Tag</h2>
+
+    <p>The following are the attributes of the table tag:</p>
+    <ul>
+        <li><code>border</code>: specifies the border of the table. The value must be a number.</li>
+        <li><code>cellpadding</code>: specifies the spacing between the cells of the table. The value must be a number.</li>
+        <li><code>cellspacing</code>: specifies the spacing between the cells and the border of the table. The value must be a number.</li>
+        <li><code>width</code>: specifies the width of the table. The value must be a number or a percentage.</li>
+        <li><code>height</code>: specifies the height of the table. The value must be a number or a percentage.</li>
+        <li><code>align</code>: specifies the alignment of the table. The possible values are <code>left</code>, <code>center</code>, <code>right</code>, and <code>justify</code>.</li>
+    </ul>
+    <p>All these attributes should be changed using the <code>style</code> attribute. Thus, using CSS.</p>
+
+</body>
+</html>

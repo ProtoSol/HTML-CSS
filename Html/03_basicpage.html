@@ -1,0 +1,135 @@
+<!-- We use the boiler plate to create a basic page. by !-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags are data about other data not visible to the user -->
+
+    <meta charset="UTF-8">
+    <!-- charset is used to define the character set of the webpage -->
+    <!-- charset is used to define the encoding of the webpage -->
+    <!-- utf8 is the most common charset. that supports most of the characters from different languages. -->
+    <!-- UTF - unicode transformation format / universal text fromat -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- tells the browser to use the latest version of the browser -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport is the area where the webpage is visible to the user -->
+    <!-- viewport is used to make the webpage responsive and to make the webpage look good on different devices. -->
+
+    <meta name="description" content="This is a description of the webpage">
+    <!-- description is used to describe the webpage -->
+
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <!-- keywords is used to define the keywords of the webpage -->
+    <!-- making it easy to search for the webpage. -->
+    
+    <meta http-equiv="refresh" content="5">
+    <!-- refresh is used to refresh the webpage every 5 seconds. -->
+    
+    <!-- <meta http-equiv="refresh" content="0; url=https://www.google.com/"> -->
+    <!-- refresh is used to refresh the webpage every 5 seconds and then redirect to the google website. -->
+    
+    <!-- These are the pre coded meta tags. -->
+
+    <!-- Other meta tags: -->
+
+    <!-- og stands for open graph, used for social media sharing. -->
+    
+    <meta property="og:title" content="Welcome to My Site">
+    <!-- og:title is used to define the title of the webpage -->
+    
+    <meta property="og:description" content="Explore the wonders of my website.">
+    <!-- og:description is used to define the description of the webpage -->
+    
+    <meta property="og:image" content="https://example.com/images/myimage.png">
+    <!-- og:image is used to define the image of the webpage -->
+    
+    <meta property="og:url" content="https://example.com/">
+    <!-- og:url is used to define the url of the webpage -->
+    
+    <meta property="og:type" content="website">
+    <!-- og:type is used to define the type of the webpage -->
+    
+    <meta property="og:site_name" content="My Awesome Site">
+    <!-- og:site_name is used to define the site name of the webpage -->
+
+    <!-- we can use website specific meta tags. -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- twitter:card is used to define the card of the webpage -->
+    
+    <meta name="twitter:title" content="Welcome to My Site">
+    <!-- twitter:title is used to define the title of the webpage -->
+    
+    <meta name="twitter:description" content="Explore the wonders of my website.">
+    <!-- twitter:description is used to define the description of the webpage -->
+    
+    <meta name="twitter:image" content="https://example.com/images/myimage.png">
+    <!-- twitter:image is used to define the image of the webpage -->
+    
+    <meta name="twitter:creator" content="@mywebsite">
+    <!-- twitter:creator is used to define the creator of the webpage -->
+
+    <title>Basic Page</title>
+</head>
+<body>
+    
+    <!-- div is used to create a division in the webpage. -->
+    <!-- It is a generic container element and can be used to group elements for styling purposes. -->
+    <!-- It is also used to create a section in the webpage. -->
+    <b>Heading tags and div tag</b>
+    <div>
+        <h1>This is heading_1</h1>
+        <h2>This is heading_2</h2>
+        <h3>This is heading_3</h3>
+        <h4>This is heading_4</h4>
+        <h5>This is heading_5</h5>
+        <h6>This is heading_6</h6>   
+    </div>
+
+    <b>hr tag</b>
+    <hr> <!-- hr is used to create a horizontal line in the webpage. -->
+
+    <br> <!-- br is used to create a break in the webpage. -->
+
+    <!-- p tag is used to create a paragraph in the webpage. -->
+    <!-- where lorem is used to write dummy text for testing purposes. -->
+    <b>P Tag and Lorem</b>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Distinctio neque ipsum a, esse voluptatum ullam consequuntur soluta 
+        blanditiis dolorem reiciendis asperiores dignissimos velit sit quas unde nisi 
+        laboriosam minus deserunt!
+    </p>
+   
+    <b>Anchor tag</b>
+    <br>
+    <!-- a tag is used to create a link in the webpage. -->
+    <!-- it has parameters like title and target. where title is used to define the title of the link and target is used to define the target of the link. -->
+    <a href="https://www.google.com/" title= "Redirect to Google" target="_blank">google</a><br>
+    <!-- The 'target' attribute in an anchor (a) tag specifies where to open the linked document. Here are the different values it can have: -->
+    <b>Target attribute in anchor tag</b>
+    <ul>
+        <li><code>_self</code>: Opens the linked document in the same frame as it was clicked (this is the default).</li>
+        <li><code>_blank</code>: Opens the linked document in a new window or tab.</li>
+        <li><code>_parent</code>: Opens the linked document in the parent frame.</li>
+        <li><code>_top</code>: Opens the linked document in the full body of the window.</li>
+        <li>Custom Frame Name: Opens the linked document in a named iframe. Example: <code>target="myFrame"</code>.</li>
+    </ul>
+
+    <br>
+    <b>img tag</b>
+    src - source of the image
+    alt - alternative text for the image
+    width - width of the image
+    height - height of the image
+    <br><br>
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" width="300" height="100">
+    If the image is not found, then the alt text will be displayed with inbuilt error message icon.
+    <!-- Alt text is used to describe the image, it is required because it loads first before the image for better user experience. -->
+    <!-- It is also used to provide alternative text for the image, if the image is not found or the user is using speech recognition. -->
+    <!-- It enhances Search Engine Optimization (SEO) by providing a description of the image to search engines. -->
+
+</body>
+</html>
