@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Handling</h1>
+
+    <p>Forms are an important part of web development as they provide a way for users to interact with the website and send data to the server. The data sent by the form can be used to update a database, send an email, or perform any other action on the server. The <code>method</code> attribute specifies how the form data should be sent to the server. The two most commonly used methods are GET and POST.</p>
+    <p>The GET method sends the form data as part of the URL in name-value pairs. The data is visible in the URL and is limited in size. It is used for non-sensitive data and bookmarkable data. The data is also cached by the browser and is not suitable for sensitive data. The GET method is also used for search forms and filters.</p>
+    <p>The POST method sends the form data as part of the body of the HTTP request. The data is not visible in the URL and the size of the data is unlimited. It is used for sensitive data and for actions that should not be bookmarkable. The POST method is also used for creating new records in a database.</p>
+
+
+    <p>The <code>&lt;form&gt;</code> tag is used to create a form in the document. It has the following attributes:</p>
+    <ul>
+        <li><code>action</code> - specifies the URL of the form-data receiver</li>
+        <li><code>method</code> - specifies the HTTP method to use when submitting the form - GET or POST</li>
+        <li><code>enctype</code> - specifies the type of encoding to use when submitting the form - application/x-www-form-urlencoded, multipart/form-data, or text/plain</li>
+        <li><code>name</code> - specifies the name of the form</li>
+        <li><code>target</code> - specifies where to open the response received after submitting the form - _blank, _self, _parent, or _top</li>
+    </ul>
+
+    <p>Example Form:</p>
+    <form action="https://www.example.com/form" method="GET" enctype="application/x-www-form-urlencoded" name="myForm" target="_blank">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="">Select a country</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <p>The form above uses several HTML tags:</p>
+    <ul>
+        <li><code>&lt;form&gt;</code>: Defines an HTML form for user input.</li>
+        <li><code>&lt;input&gt;</code>: Defines an input control. Types used include:
+            <ul>
+                <li><code>text</code>: Used for a single-line text input.</li>
+                <li><code>email</code>: Used for an input field for email addresses.</li>
+                <li><code>radio</code>: Used for selecting one option from a set.</li>
+                <li><code>submit</code>: Defines a button for submitting form data.</li>
+            </ul>
+        </li>
+        <li><code>&lt;label&gt;</code>: Defines a label for an <code>&lt;input&gt;</code> element.</li>
+        <li><code>&lt;select&gt;</code>: Creates a drop-down list.</li>
+        <li><code>&lt;option&gt;</code>: Defines an option in a drop-down list.</li>
+        <li><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>: Used to organize the form layout in a tabular format.</li>
+    </ul>
+
+    <p>The <code>&lt;optgroup&gt;</code> tag is used to group related options in a <code>&lt;select&gt;</code> menu. This is useful for categorizing options under a single heading, improving the organization and readability of the drop-down list for users.</p>
+
+    <p>The <code>&lt;form&gt;</code> tag has the following parameters:</p>
+    <ul>
+        <li><code>accept</code> - specifies a comma-separated list of MIME types a server can handle</li>
+        <li><code>accept-charset</code> - specifies a character encoding that must be accepted by the server</li>
+        <li><code>autocomplete</code> - specifies whether a form should have autocomplete enabled or disabled</li>
+        <li><code>novalidate</code> - specifies that the form should not be validated when submitted</li>
+    </ul>
+
+</body>
+</html>
