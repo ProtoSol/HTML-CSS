@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Internal CSS -->
+    <style>
+        h1{
+            color: blue;
+        }
+        /*h2{
+            color: red;
+            font-size: 30px;
+        } */
+        #title{
+            color: green;
+        }
+        .bg-light{
+            background-color: lightgray;
+            color:black;
+        }
+        .bg-dark{
+            background-color: darkgray;
+            color: white;
+        }
+        .main-title{
+            font-style: italic;
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="bg-dark main-title">Basic Selectors</h1>
+
+    <!-- To apply different color to the h 2 tag group we will be using ID and
+         Class Selectors. -->
+
+    <!-- ID - Identity, Unique
+       - An ID cannot be repeated twice
+       - A tag cannot have multiple ID's
+       - Represented by Hash -->
+    <!-- Class - Group of elements
+       - Class is represented by Dot
+       - Classes are reusable, we can use one class name any number of times 
+       - Can be used multiple times in one element -->
+    <!-- ID has more priority than Class
+        - Classes work on the bases of interpretation as the last class will be priority -->
+
+    <h2 id="title" class="bg-light">This is a heading 2</h2> <!-- Only here title id was used -->
+    <h2 class="bg-dark">This is a heading 2</h2>
+    <h2 class="bg-light">This is a heading 2</h2>
+    <h2 class="bg-dark">This is a heading 2</h2>
+    <h2 class="bg-light">This is a heading 2</h2>
+    <h2 class="bg-dark">This is a heading 2</h2>
+</body>
+</html>

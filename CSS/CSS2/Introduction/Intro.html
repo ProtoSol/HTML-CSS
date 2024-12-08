@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- To show the !important tag. -->
+    <link rel="stylesheet" href="external.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h2{
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+
+    <!-- To use External css we need to link the css file to html file. -->
+    <!-- <link rel="stylesheet" href="external.css"> -->
+
+    <!-- One point to notice is that the second style sheet will run even if both internal and external is being used.
+        As HTML is an interpreted language and the last style sheet will run. -->
+
+</head>
+<body>
+    <h1>Ways to use CSS</h1>
+    <!-- 3 ways to use CSS: Inline, Internal, External -->
+
+    <!-- Inline CSS -->
+    <!-- <h2 style="color: red; font-size: 30px">This is a heading</h2>
+    <h2 style="color: red; font-size: 30px">This is a heading</h2>
+    <h2 style="color: red; font-size: 30px">This is a heading</h2> -->
+    <!-- Not Recommended, not a good practice -->
+
+    <!-- To reduce the Redundancy we use Internal CSS -->
+    <h2 style="color: red; font-size: 30px">This is a heading</h2>
+    <h2>This is a heading</h2>
+    <h2>This is a heading</h2>
+    
+    <!-- It is also not Recommended as, this css will be applied to only this page. -->
+
+    <!-- The only better way to use CSS is External CSS. -->
+
+    
+
+</body>
+</html>

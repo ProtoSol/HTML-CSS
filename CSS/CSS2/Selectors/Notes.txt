@@ -1,0 +1,61 @@
+CSS Selectors
+================
+
+CSS selectors are used to select the HTML elements that a style will be applied to. A selector consists of a pattern used to match elements in the document tree.
+
+Types of Selectors
+-------------------
+
+### Universal Selector
+
+*   The universal selector is represented by an asterisk symbol (\*). It matches all elements in the document tree.
+
+### Type Selectors
+
+*   Type selectors are used to select elements of a particular type. For example, to select all <p> elements, the selector would be p.
+
+### Class Selectors
+
+*   Class selectors are used to select elements that have a particular class. For example, to select all elements with the class "header", the selector would be .header.
+
+### ID Selectors
+
+*   ID selectors are used to select elements that have a particular id. For example, to select an element with the id "header", the selector would be #header.
+
+### Attribute Selectors
+
+*   Attribute selectors are used to select elements that have a particular attribute. For example, to select all elements with the attribute "href", the selector would be [href].
+
+### Combinators
+
+*   Combinators are used to combine multiple selectors. For example, to select all <p> elements that are children of a <div> element, the selector would be div p.
+
+### Pseudo-classes
+
+*   Pseudo-classes are used to select elements that are in a particular state. For example, to select all elements that are currently being hovered over, the selector would be :hover.
+
+### Pseudo-elements
+
+*   Pseudo-elements are used to select parts of an element. For example, to select the first line of a <p> element, the selector would be p::first-line.
+
+Selector Combinations
+----------------------
+
+*   Selectors can be combined to select elements that match multiple criteria. For example, to select all <p> elements that are children of a <div> element and have the class "header", the selector would be div p.header.
+
+Selector Precedence
+-------------------
+
+*   The order in which selectors are written can affect the final result. The last selector in a list will override any previous selectors that match the same element.
+
+Selector Precedence Rules
+-------------------------
+
+*   The universal selector has the lowest precedence.
+*   Type selectors have a higher precedence than the universal selector.
+*   Class selectors have a higher precedence than type selectors.
+*   ID selectors have a higher precedence than class selectors.
+*   Attribute selectors have a higher precedence than ID selectors.
+*   Combinators have a higher precedence than attribute selectors.
+*   Pseudo-classes have a higher precedence than combinators.
+*   Pseudo-elements have a higher precedence than pseudo-classes.

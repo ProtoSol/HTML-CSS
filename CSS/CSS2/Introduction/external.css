@@ -1,0 +1,5 @@
+h2{
+    color: Green !important;
+}
+
+/* We can make external css have the higher priority than internal css, using !important tag.0 */

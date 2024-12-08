@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* #first{
+            background-color: lightgray;
+        }
+        #second{
+            background-color: darkgray;
+        } */ 
+        /* If we want to give both id the same color then we can use this */
+        #first, #second{
+            background-color: lightgray;
+        }
+        /* if we want to apply css on h2 of first div only we can use this */
+        /*#first h2{
+            color: red;
+        }*/
+        /* To apply css on h2 of child of first div only we can use this */
+        #first .child h2{
+            color: green;
+        }
+        /* To apply css on p of child of first div only we can use this */
+        #first .child p{
+            color: blue;
+        }
+        /* To apply css on p of child of first div only we can use this */
+        #first .child #para{
+            color: darkgray;
+        }
+
+        /* To apply css on the parent class h2 only we can use Combinator */
+        #first > h2{
+            color: red;
+        }
+
+        /* To access the immediate child (only one immediate) of the parent we can use this */
+        #second + h3{
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>This is a heading</h1>
+
+    <div id="first">
+        <h2>This is a subheading</h2>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
+        <div class="child">
+            <h2>This is a subheading of the child div of first</h2>
+            <p id="para">This is a paragraph of the child div of first</p>
+            <p>This is another paragraph of the child div of first</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="second">
+        <h2>This is a subheading</h2>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
+    </div>
+
+    <h3>This is outside both parent div</h3>
+    <h3>This is outside both parent div</h3>
+    <h3>This is outside both parent div</h3>
+    
+</body>
+</html>

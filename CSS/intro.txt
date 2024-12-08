@@ -1,0 +1,17 @@
+CSS - Cascading Style Sheet
+
+- Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.
+- CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+- CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. 
+- It allows one to present the same information in different media.
+- The CSS language is easy to learn and understand.
+
+- CSS is used to define styles for web pages, including the design, layout, and colors of the different elements.
+
+- CSS is not specific to a single web browser. It can be used by any browser that supports CSS, such as Chrome, Firefox, Safari, and Internet Explorer.
+
+CSS has Three ways to define styles:
+
+- Inline styles
+- Internal styles
+- External styles {Most common}
